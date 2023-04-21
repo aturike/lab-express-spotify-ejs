@@ -1,0 +1,12 @@
+<div>
+  <div>
+    <h1>Title</h1>
+    <h1>Listen</h1>
+  </div>
+  <% tracksArr.forEach(track=> { %>
+  <div>
+    <h1><%=track.name%></h1>
+    <button><a href="<%= track.external_urls.spotify %>">To Spotify</a></button>
+  </div>
+  <% }); %>
+</div>
